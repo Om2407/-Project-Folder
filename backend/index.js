@@ -19,9 +19,9 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
     origin: [
-        "http://localhost:5173",
-        "https://ai-lms-website-63tw.onrender.com"  // ✅ sahi URL
-    ],
+    "http://localhost:5173",
+    "https://ai-lms-website-omfr.onrender.com"  // FRONTEND = omfr
+],
     credentials: true
 }))
 
