@@ -36,7 +36,7 @@ export const searchWithAi = async (req, res) => {
 Only reply with one single keyword from the list above that best matches the query. Do not explain anything. No extra text.
 Query: ${input}`;
 
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
+   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const result = await model.generateContent(prompt);
     const keyword = result.response.text().trim();
     console.log("AI Generated Keyword:", keyword);
