@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
-import { FaPlayCircle } from 'react-icons/fa';
+import { FaPlayCircle, FaRobot } from 'react-icons/fa';
 import { FaArrowLeftLong } from "react-icons/fa6";
+import QuizComponent from '../components/QuizComponent';
 
 function ViewLecture() {
   const { courseId } = useParams();
@@ -13,6 +14,7 @@ function ViewLecture() {
   const [selectedLecture, setSelectedLecture] = useState(
     selectedCourse?.lectures?.[0] || null
   );
+  const [showQuiz, setShowQuiz] = useState(false);
   const navigate = useNavigate()
   const courseCreator = userData?._id === selectedCourse?.creator ? userData : null;
 
@@ -50,11 +52,32 @@ function ViewLecture() {
         </div>
 
         {/* Selected Lecture Info */}
-        <div className="mt-2">
-          <h2 className="text-lg font-semibold text-gray-800">{selectedLecture?.lectureTitle}</h2>
+        <div className="mt-4 flex items-center justify-between border-t pt-4">
+          <div>
+            <h2 className="text-xl font-bold text-gray-800">{selectedLecture?.lectureTitle}</h2>
+            <p className="text-sm text-gray-500 mt-1">Video Lecture</p>
+          </div>
           
+          {selectedLecture && (
+            <button 
+              onClick={() => setShowQuiz(true)}
+              className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-5 py-2 rounded-xl font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+            >
+              <FaRobot />
+              AI Quiz
+            </button>
+          )}
         </div>
       </div>
+
+      {showQuiz && (
+        <QuizComponent 
+          lectureTitle={selectedLecture?.lectureTitle}
+          courseTitle={selectedCourse?.title}
+          courseDescription={selectedCourse?.description}
+          onClose={() => setShowQuiz(false)}
+        />
+      )}
 
       {/* Right - All Lectures + Creator Info */}
       <div className="w-full md:w-1/3 bg-white rounded-2xl shadow-md p-6 border border-gray-200 h-fit">

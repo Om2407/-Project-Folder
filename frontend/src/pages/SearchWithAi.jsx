@@ -83,11 +83,13 @@ function SearchWithAi() {
         { withCredentials: true }
       );
       
-      setRecommendations(result.data);
+      setRecommendations(result.data.courses);
       
-      if (result.data.length > 0) {
-        speak(`Found ${result.data.length} courses for you`);
-        toast.success(`Found ${result.data.length} courses`);
+      const courseCount = result.data.courses?.length || 0;
+      
+      if (courseCount > 0) {
+        speak(`Found ${courseCount} courses for you`);
+        toast.success(`Found ${courseCount} courses`);
       } else {
         speak("No courses found for your query");
         toast.info("No courses found. Try different keywords.");
