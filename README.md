@@ -1,179 +1,133 @@
-# 🎓 AI-Powered Learning Management System
+# 🎓 AI-Powered Learning Management System (LMS)
 
-A full-stack, SaaS-level Learning Management System built with the **MERN Stack**, featuring AI-powered smart search, Google Authentication, and Razorpay payment integration.
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-🌐 **Live Demo:** [ai-lms-website-omfr.onrender.com](https://ai-lms-website-omfr.onrender.com)
-📁 **GitHub:** [github.com/Om2407/-Project-Folder](https://github.com/Om2407/-Project-Folder)
+> **Revolutionizing Education with AI: A production-ready MERN stack LMS featuring Gemini-powered intelligence.**
+
+---
+
+## 🌐 Live Project
+**Deployment:** [ai-lms-website-omfr.onrender.com](https://ai-lms-website-omfr.onrender.com)  
+**GitHub Repository:** [github.com/Om2407/-Project-Folder](https://github.com/Om2407/-Project-Folder)
+
+---
+
+## 🔑 Demo Credentials
+Recruiters and visitors can use these credentials to explore the platform instantly:
+
+| Role | Email | Password |
+| :--- | :--- | :--- |
+| **Student** | `student@demo.com` | `student123` |
+| **Educator** | `educator@demo.com` | `educator123` |
+
+---
+
+## ✨ Key Highlights
+- 🧠 **AI-First Architecture**: Deep integration with Google Gemini API for semantic search and content generation.
+- 🔐 **Secure RBAC**: Robust Role-Based Access Control for distinct Student and Instructor experiences.
+- 💳 **Real-Time Payments**: Production-grade Razorpay integration with secure webhook handling.
+- ☁️ **Media Cloud Staging**: Seamless video and thumbnail management via Cloudinary.
+- ⚡ **Optimized Performance**: Redux-managed state for lightning-fast UI transitions and data sync.
 
 ---
 
 ## 🚀 Features
-
-- 🧠 **AI-Powered Smart Search** — Gemini API for intelligent course recommendations
-- 🔐 **Google OAuth 2.0** — Secure authentication via Google
-- 💳 **Razorpay Payment Gateway** — Seamless course purchase flow
-- ⚛️ **Redux Toolkit** — Efficient global state management
-- 📚 **Student & Instructor Dashboards** — Role-based access and views
-- 🖥️ **Fully Responsive UI** — Works on all screen sizes
-- 📈 **30% Faster Load Times** — Optimized performance
+- 🔍 **AI-Powered Smart Search** — Intelligent course recommendations using Gemini AI.
+- 🎙️ **Voice-Enabled Search** — Hands-free navigation for an accessible learning experience.
+- 🔑 **Google OAuth 2.0** — One-click secure login for frictionless onboarding.
+- 💰 **Razorpay Payment Gateway** — Fully functional course checkout and enrollment.
+- 📊 **Role-Based Dashboards** — Specialized panels for course management and learning progress.
+- 🎥 **Cloudinary Media Upload** — Fast and reliable video lecture uploads for educators.
+- 📱 **Fully Responsive UI** — Premium, glassmorphism-inspired design that works on any device.
 
 ---
 
-## 🔧 Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
-| Technology | Purpose |
-|---|---|
-| React.js | UI Library |
-| Redux Toolkit | State Management |
-| Tailwind CSS | Styling |
-| Axios | API Requests |
+| Technology | Usage |
+| :--- | :--- |
+| **React.js** | Library for building the interactive user interface. |
+| **Redux Toolkit** | Global state management for user and course data. |
+| **Tailwind CSS** | Utility-first CSS framework for premium UI/UX design. |
+| **Three.js** | 3D background effects on authentication pages. |
 
 ### Backend
-| Technology | Purpose |
-|---|---|
-| Node.js | Runtime Environment |
-| Express.js | Web Framework |
-| MongoDB | Database |
-| Mongoose | ODM |
+| Technology | Usage |
+| :--- | :--- |
+| **Node.js** | Scalable server-side runtime environment. |
+| **Express.js** | Minimalist web framework for building REST APIs. |
+| **MongoDB** | NoSQL database for flexible data modeling. |
+| **JWT** | Secure token-based authentication. |
 
-### Integrations
+### Integrations & Services
 | Service | Purpose |
-|---|---|
-| Gemini API | AI Smart Search |
-| Google OAuth 2.0 | Authentication |
-| Razorpay | Payment Processing |
+| :--- | :--- |
+| **Google Gemini API** | AI-driven search intelligence and content analysis. |
+| **Razorpay** | Secure end-to-end payment processing. |
+| **Cloudinary** | Cloud-based image and video management. |
+| **Firebase** | Google authentication and hosting services. |
 
 ---
 
-## 📁 Project Structure
+## 📸 Screenshots
 
-```
--Project-Folder/
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── redux/
-│   │   └── App.jsx
-│   ├── public/
-│   └── package.json
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   └── index.js
-└── README.md
-```
+<div align="center">
+  <p><i>Click to expand images</i></p>
+  <img src="https://via.placeholder.com/800x450?text=LMS+Home+Screen+Placeholder" alt="Home Screen" width="800" />
+  <br/>
+  <img src="https://via.placeholder.com/400x225?text=AI+Search+Demo" alt="AI Search" width="400" />
+  <img src="https://via.placeholder.com/400x225?text=Instructor+Dashboard" alt="Dashboard" width="400" />
+</div>
 
 ---
 
 ## ⚙️ Getting Started
 
 ### Prerequisites
-- Node.js v18+
-- MongoDB (local or Atlas)
-- Razorpay account
-- Google Cloud Console project
-- Gemini API key
+- Node.js (v18 or higher)
+- MongoDB Atlas Account
+- Gemini API Key (Google AI Studio)
 
-### Installation
+### Installation Steps
 
-**1. Clone the repository**
-```bash
-git clone https://github.com/Om2407/-Project-Folder.git
-cd -Project-Folder
-```
+1. **Clone the Repo**
+   ```bash
+   git clone https://github.com/Om2407/-Project-Folder.git
+   cd -Project-Folder
+   ```
 
-**2. Install dependencies**
-```bash
-# Backend
-cd backend
-npm install
+2. **Backend Setup**
+   ```bash
+   cd backend
+   npm install
+   # Create a .env file and add your credentials (MONGO_URI, JWT_SECRET, etc.)
+   npm run dev
+   ```
 
-# Frontend
-cd ../frontend
-npm install
-```
-
-**3. Setup environment variables**
-
-Create `.env` in the `backend/` directory:
-```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-
-# Google OAuth
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-
-# Razorpay
-RAZORPAY_KEY_ID=your_razorpay_key_id
-RAZORPAY_KEY_SECRET=your_razorpay_key_secret
-
-# Gemini AI
-GEMINI_API_KEY=your_gemini_api_key
-```
-
-Create `.env` in the `frontend/` directory:
-```env
-VITE_API_URL=http://localhost:5000
-VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
-VITE_GEMINI_API_KEY=your_gemini_api_key
-```
-
-**4. Run the application**
-```bash
-# Backend (from /backend)
-npm run dev
-
-# Frontend (from /frontend)
-npm run dev
-```
-
-App will run at `http://localhost:5173`
-
----
-
-## 🔐 Environment Variables Summary
-
-| Variable | Description |
-|---|---|
-| `MONGO_URI` | MongoDB connection string |
-| `JWT_SECRET` | Secret key for JWT tokens |
-| `GOOGLE_CLIENT_ID` | Google OAuth Client ID |
-| `GOOGLE_CLIENT_SECRET` | Google OAuth Client Secret |
-| `RAZORPAY_KEY_ID` | Razorpay API Key |
-| `RAZORPAY_KEY_SECRET` | Razorpay Secret Key |
-| `GEMINI_API_KEY` | Google Gemini API Key |
-
----
-
-## 📸 Screenshots
-
-> Add screenshots of your app here
-
----
-
-## 🚀 Deployment
-
-- **Frontend:** Deployed on [Render](https://render.com)
-- **Backend:** Deployed on [Render](https://render.com)
-- **Database:** MongoDB Atlas
+3. **Frontend Setup**
+   ```bash
+   cd ../frontend
+   npm install
+   # Create a .env file and add VITE_API_URL
+   npm run dev
+   ```
 
 ---
 
 ## 👨‍💻 Author
 
 **Om Gupta**
-- GitHub: [@Om2407](https://github.com/Om2407)
-- LinkedIn: [linkedin.com/in/om-gupta-4a3549294](https://linkedin.com/in/om-gupta-4a3549294)
-- Live: [ai-lms-website-omfr.onrender.com](https://ai-lms-website-omfr.onrender.com)
+- **GitHub:** [@Om2407](https://github.com/Om2407)
+- **LinkedIn:** [linkedin.com/in/om-gupta-4a3549294](https://linkedin.com/in/om-gupta-4a3549294)
+- **Portfolio:** [ai-lms-website-omfr.onrender.com](https://ai-lms-website-omfr.onrender.com)
 
 ---
 
 ## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
